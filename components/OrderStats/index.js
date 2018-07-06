@@ -34,7 +34,6 @@ export class OrderStats extends Component {
 
     dataLastWeek.then(res =>
       this.setState({
-        ...this.state,
         lastWeek: {
           numberOfOrders: reduceNumberOfOrders(res),
           totalValueOfOrders: reduceTotalValueOfOrders(res)
@@ -45,7 +44,6 @@ export class OrderStats extends Component {
 
   handleSelectView = ({ target }) => {
     this.setState({
-      ...this.state,
       selectedView: target.value
     });
 
@@ -62,7 +60,6 @@ export class OrderStats extends Component {
 
         dataLastMonth.then(res =>
           this.setState({
-            ...this.state,
             lastMonth: {
               numberOfOrders: reduceNumberOfOrders(res),
               totalValueOfOrders: reduceTotalValueOfOrders(res)
