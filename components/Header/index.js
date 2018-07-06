@@ -3,6 +3,6 @@ import { HeaderContainer } from './style';
 
 export const Header = () => (
   <HeaderContainer>
-    <h1>wi-Q Order Stats</h1>
+    <h1>Order Stats</h1>
   </HeaderContainer>
 );
